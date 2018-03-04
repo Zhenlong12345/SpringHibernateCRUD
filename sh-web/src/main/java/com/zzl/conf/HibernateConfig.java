@@ -14,6 +14,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages = "com.zzl")
+@EnableTransactionManagement
+@EnableJpaRepositories("com.zzl.repository")
 public class HibernateConfig extends WebMvcConfigurerAdapter {
 	private final static String DB_DRIVER = "com.mysql.jdbc.Driver";
 	private final static String DB_URL = "jdbc:mysql://localhost:3306/shdb";
