@@ -37,7 +37,7 @@ public class pageController {
 		mv.addObject("userClicknew",true);
 		return mv;
 	}
-	@RequestMapping(value="/save", method = RequestMethod.POST)
+	@RequestMapping(value="/employee/save", method = RequestMethod.POST)
 	public ModelAndView saveEmployee(@ModelAttribute employee newEmployee) {
 		employeeService.saveEmployee(newEmployee);
 		ModelAndView mav=new ModelAndView();

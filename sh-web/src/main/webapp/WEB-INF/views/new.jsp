@@ -7,7 +7,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<form class="form-horizontal"
-									action="${contextRoot}/save" method="POST">
+									action="${contextRoot}/employee/save" method="POST">
 									
 									<div class="form-group">
 										<label class="control-label col-md-4" for="name">
